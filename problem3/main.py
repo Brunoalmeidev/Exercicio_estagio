@@ -2,11 +2,11 @@ import json
 import xml.etree.ElementTree as ET
 
 
-with open('dados.json', 'r') as json_file:
+with open('problem3/dados.json', 'r') as json_file:
     dados_json = json.load(json_file)
 
 
-tree = ET.parse('dados2.xml')
+tree = ET.parse('problem3/dados2.xml')
 root = tree.getroot()
 dados_xml = []
 for row in root.findall('row'):
